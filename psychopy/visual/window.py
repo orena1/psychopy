@@ -2344,7 +2344,7 @@ class Window(object):
             logging.info('Writing %i frames to %s' % (len(self.movieFrames),
                                                       fileName))
 
-        if fileExt in ['.gif', '.mpg', '.mpeg', '.mp4', '.mov']:
+        if fileExt in ['.gif', '.mpg', '.mpeg', '.mp4', '.mov', '.avi']:
             # lazy loading of moviepy.editor (rarely needed)
             from moviepy.editor import ImageSequenceClip
             # save variety of movies with moviepy
